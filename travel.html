@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel & Stay | Jeff & Nicole</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .travel-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .hotel-card {
+            border: 1px solid var(--border-gold);
+            padding: 20px;
+            background: #fff;
+        }
+        .map-container {
+            width: 100%;
+            height: 300px;
+            background: #eee;
+            margin: 20px 0;
+            border: 2px solid var(--primary-dark);
+        }
+        @media (max-width: 600px) {
+            .travel-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="schedule.html">Schedule</a>
+        <a href="travel.html">Travel & Stay</a>
+        <a href="registry.html">Registry</a>
+        <a href="rsvp.html">RSVP</a>
+        <a href="faq.html">FAQ</a>
+    </nav>
+
+    <div class="container">
+        <h1>Arrival & Lodging</h1>
+
+        <section>
+            <h2>Wedding Location:</h2>
+            <p><strong>The Tapestry House</strong><br>
+            3212 N Overland Trail, Laporte, CO 80535</p>
+            
+            <div class="map-container" style="height: auto; border: none;">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3032.880491823157!2d-105.1396329234293!3d40.63368397140552!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8769367b53f8537f%3A0xe076371922235c18!2sTapestry%20House%20by%20Wedgewood%20Weddings!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus" 
+                    width="100%" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+
+            <div style="background: var(--bg-cream); border: 1px solid var(--soft-rose); padding: 15px; margin-top: 10px;">
+                <p><strong>Traveler's Note:</strong> When using GPS, please ensure you enter the city as <strong>Laporte</strong>. Some systems may misroute you if "Fort Collins" is used.</p>
+                <p><small>From I-25: Take Exit 269B (Hwy 14/Mulberry St) West. Follow Mulberry to Riverside Ave, turn right. Continue to College Ave, turn right, then follow signs for CR 54G to N Overland Trail.</small></p>
+            </div>
+        </section>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-gold); margin: 40px auto; width: 50%;">
+
+        <section>
+            <h2>Suggested Lodging</h2>
+            <p>For your comfort, we recommend staying in nearby Old Town Fort Collins (approx. 10-15 minutes from the venue).</p>
+            
+            <div class="travel-grid">
+                <div class="hotel-card">
+                    <h3>The Elizabeth Hotel</h3>
+                    <p><small>Old Town Luxury & Music Vibes</small></p>
+                    <p>High-end boutique stay in the heart of downtown.</p>
+                    <a href="https://www.theelizabethcolorado.com/" target="_blank" style="color: var(--accent-red);">Visit Website</a>
+                </div>
+
+                <div class="hotel-card">
+                    <h3>The Armstrong Hotel</h3>
+                    <p><small>Historic Charm</small></p>
+                    <p>A beautifully restored 1920s landmark.</p>
+                    <a href="https://www.thearmstronghotel.com/" target="_blank" style="color: var(--accent-red);">Visit Website</a>
+                </div>
+
+                <div class="hotel-card">
+                    <h3>Hilton Fort Collins</h3>
+                    <p><small>Reliable & Convenient</small></p>
+                    <p>Located near the CSU campus with ample amenities.</p>
+                    <a href="https://www.hilton.com/en/hotels/foccohf-hilton-fort-collins/" target="_blank" style="color: var(--accent-red);">Visit Website</a>
+                </div>
+
+                <div class="hotel-card">
+                    <h3>Edwards House</h3>
+                    <p><small>Victorian Bed & Breakfast</small></p>
+                    <p>Elegant and quiet, perfect for a boutique experience.</p>
+                    <a href="https://edwardshouse.com/" target="_blank" style="color: var(--accent-red);">Visit Website</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>
